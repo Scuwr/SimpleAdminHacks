@@ -62,11 +62,11 @@ hacks:
       exceededMessage: '&9Limit reached for this chunk, you cannot place more of this type of block.'
       tileEntities:
         HOPPER: 4
-        PISTON_BASE: 4
-        PISTON_STICKY_BASE: 4
+        PISTON: 4
+        STICKY_PISTON: 4
         DISPENSER: 4
         DROPPER: 4
-        REDSTONE_COMPARATOR: 4
+        COMPARATOR: 4
         OBSERVER: 2
       exempt:
       - Steve
@@ -116,6 +116,7 @@ hacks:
       enabled: true
       contents:
        - ==: org.bukkit.inventory.ItemStack
+         v: 1
          type: COOKIE
          amount: 32
          meta:
@@ -124,8 +125,9 @@ hacks:
            display-name: 'Manna'
            lore:
             - "Gift from the Admins as you"
-            - "begin your journey on Devotion."
+            - "begin your journey."
        - ==: org.bukkit.inventory.ItemStack
+         v: 1
          type: BED
          amount: 1
          meta:
@@ -142,11 +144,11 @@ hacks:
       title: Welcome, ${player}
       author: Bonkill
       pages:
-       - "   &oWelcome to Devoted, ${player}!"
-       - "    &oWhat is Devoted?\n\"A new type of Minecraft server built towards providing a competitive, high stakes, immersive experience controlled by the players.\"&r\n-ShadedJon, server owner"
-       - "    &oWhat is Devoted?&r\n&lNOT just survival&r\nAdmins are hands-off and only handle glitches and hackers\n&lNOT just chaos&r\nPlugins allow players and towns to enforce their own rules\n&lNOT just roleplay&r\nNobody pretends -- conflict is genuine and heated"
+       - "   &oWelcome, ${player}!"
+       - "    &oWhat is this place?\n\"A new type of Minecraft server built towards providing a competitive, high stakes, immersive experience controlled by the players.\"&r\n-Scuwr, server owner"
+       - "    &oWhat is this place?&r\n&lNOT just survival&r\nAdmins are hands-off and only handle glitches and hackers\n&lNOT just chaos&r\nPlugins allow players and towns to enforce their own rules\n&lNOT just roleplay&r\nNobody pretends -- conflict is genuine and heated"
        - "    &oBasic Mechanics&r\n-The world is custom generated\n-Many custom biomes\n-Limited chat range\n-Respawn in random area unless you sleep\n-Mobs spawn sparsely\n-Vanilla Nether\n-Ore veins and custom ore spawning."
-       - "   &oDevoted Mods&r\n   &lCitadel&r:\n Reinforces things so it takes numerous breaks to destroy them. Locks some things too.\n&lMore Info:&r &oVisual Guide:&r imgur.com/BnlL2 &oWiki Page:&r tinyurl.com/citadelmod\n&oType \"/help citadel\" in chat to get commands"
+       - "   &oMods&r\n   &lCitadel&r:\n Reinforces things so it takes numerous breaks to destroy them. Locks some things too.\n&lMore Info:&r &oVisual Guide:&r imgur.com/BnlL2 &oWiki Page:&r tinyurl.com/citadelmod\n&oType \"/help citadel\" in chat to get commands"
        - "   &lPrison Pearl&r:\n Ender Pearls trap players in the end. Others can steal back your pearl and free you -- you always know where it is so they cannot hide it\n&lMore Info:&r &oVisual Guide:&r imgur.com/XbhkK &oWiki Page:&r tinyurl.com/prisperl"
        - "   &lJuke Alert&r:\n Creates 'Juke' blocks that record player activity in radius. If you steal, grief, or trespass -- people will know about it & put a bounty for you to be pearled.\n&lMore Info:&r &oWiki Page:&r tinyurl.com/snitchblock"
        - "   &lMythicMobs&r:\n Some custom mobs to increase the risk and thrill on specific islands and areas throughout Devoted.\n&lMore Info:&r &oBukkit Page:&r dev.bukkit.org/bukkit-plugins/mythicmobs"
@@ -223,8 +225,8 @@ hacks:
      - ENDER_CHEST
      - SPONGE
      - HOPPER
-     - PISTON_BASE
-     - PISTON_STICKY_BASE
+     - PISTON
+     - STICKY_PISTON
      - OBSERVER
   Insight:
     enabled: false

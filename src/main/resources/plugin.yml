@@ -147,4 +147,4 @@ permissions:
       description: Gives the ability to create and use debug wands
       default: op
 
-api-version: 1.14
+api-version: 1.16
